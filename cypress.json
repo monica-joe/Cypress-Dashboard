@@ -1,3 +1,7 @@
 {
-  "testFiles": "**/*.feature"
+  "baseUrl": "https://dash-staging.zyda.com/",
+  "pageLoadTimeout": 80000,
+  "defaultCommandTimeout": 6000,
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": "*.js"
 }
