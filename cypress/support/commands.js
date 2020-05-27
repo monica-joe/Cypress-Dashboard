@@ -23,3 +23,23 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+//find element by class
+Cypress.Commands.add("findByClass", (testClass) => {
+  cy.get(`[class="${testClass}"]`);
+});
+
+//find element by name
+Cypress.Commands.add("findByName", (testName) => {
+  cy.get(`[name="${testName}"]`);
+});
+
+//find element and click on it
+Cypress.Commands.add("click", (testElement) => {
+  cy.get(`[class="${testElement}"]`).click();
+});
+
+//find element and type text in it
+Cypress.Commands.add("type", (testElement, testaData) => {
+  cy.get(`[class="${testElement}"]`).type(testaData);
+});

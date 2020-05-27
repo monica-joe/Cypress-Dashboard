@@ -1,3 +1,5 @@
 {
-  "testFiles": "**/*.feature"
+  "baseUrl": "https://dash-staging.zyda.com/",
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": "*.js"
 }
